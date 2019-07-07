@@ -5,6 +5,7 @@ class Ship():
     
     def __init__(self, screen):
         """Initialize the ship and set its starting position."""
+
         self.screen = screen
 
         # Load ship image and get its rectangle
@@ -15,6 +16,7 @@ class Ship():
         # Start new ship at bottom center of screen.
         self.rect.centerx = self.screen_rect.centerx
         self.rect.bottom = self.screen_rect.bottom
+
 
     def blitme(self):
         """Draw ship at its current location."""
